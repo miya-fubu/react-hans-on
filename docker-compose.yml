@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  learn_react:
+    build: .
+    command: bash -c "while true; do `sleep 10`; done"
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
